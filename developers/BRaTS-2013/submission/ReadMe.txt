@@ -1,1 +1,0 @@
-This directory should contain an example submission that can be used to test the system. The submission should be a zipfile containing the data expected by the scoring program.

@@ -1,1 +1,0 @@
-command: python $program/code.py $program $input $output $hidden $shared $submission_program $ingestion_program

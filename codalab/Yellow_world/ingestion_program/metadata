@@ -1,1 +1,0 @@
-command: python $ingestion_program/test.py $ingestion_program $input $output $hidden $shared $submission_program

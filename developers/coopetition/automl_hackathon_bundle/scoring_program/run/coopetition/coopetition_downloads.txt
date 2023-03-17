@@ -1,7 +1,0 @@
-submission_pk,submission_owner,downloaded_by,time_of_download
-8052,lukasz,lukasz,2015-06-09 14:19:52+00:00
-8039,lukasz,lukasz,2015-06-09 14:20:11+00:00
-8038,lukasz,lukasz,2015-06-09 14:33:24+00:00
-8038,lukasz,lukasz.romaszko@gmail.com,2015-06-09 14:34:12+00:00
-8052,lukasz,lukasz.romaszko@gmail.com,2015-06-09 14:34:26+00:00
-8055,lukasz.romaszko@gmail.com,lukasz.romaszko@gmail.com,2015-06-09 14:35:44+00:00

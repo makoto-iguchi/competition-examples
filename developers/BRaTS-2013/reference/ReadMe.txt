@@ -1,1 +1,0 @@
-This directory should contain the reference data for comparing with submissions.

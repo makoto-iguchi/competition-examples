@@ -1,2 +1,0 @@
-command: $program/SpineLocalizationEvaluate.exe $input $output
-description: Spine competition submission program.

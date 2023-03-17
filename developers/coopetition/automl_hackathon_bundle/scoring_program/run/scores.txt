@@ -1,9 +1,0 @@
-set1_score: -0.120921305182
-set2_score: 0.106517047117
-set3_score: 0.399656946827
-set4_score: 0.814916048419
-Duration: 0
-avg_score: 0.240033747436
-Nsub: 15
-Diff: -0.700566
-Ndown: 1
