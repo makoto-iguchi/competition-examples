@@ -3,6 +3,15 @@ import sys
 import os
 import os.path
 
+#####
+# # Workaround. Should create a proper dokcer and set it on the config instead
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install(statsmodels)
+import statsmodels
+#####
+
 input_dir = sys.argv[1]
 output_dir = sys.argv[2]
 
