@@ -15,28 +15,95 @@ phases:
     1:
         phasenumber: 1
         label: "Preliminary - Anonymization"
-        start_date: 2013-06-30
+        start_date: 2023-03-01
         max_submissions: 100
         is_scoring_only: True
-        scoring_program: scoring_program.zip
-        reference_data: reference_data.zip
+        scoring_program: scoring_program_anonymization.zip
+        reference_data: reference_data_anonymization.zip
+        phase_never_ends: True
     2:
         phasenumber: 2
         label: "Preliminary - Attack"
-        start_date: 2013-06-30
+        start_date: 2023-03-01
         max_submissions: 100
         is_scoring_only: True
-        scoring_program: scoring_program.zip
-        reference_data: reference_data.zip
+        scoring_program: scoring_program_anonymization.zip #temporarily
+        reference_data: reference_data_anonymization.zip #temporarily
+        phase_never_ends: True
 
 leaderboard:
     leaderboards:
-        RESULTS: &RESULTS
-            label: Results
+        Anonymous_phase_result: &ANON_RESULTS
+            label: Anonymization Phase Result
             rank: 1
+        Attack_phase_result: &ATK_RESULTS
+            label: Attack Phase Result
+            rank: 2
+    column_groups:
+        Attack_scores: &ATK_SCORE
+            label: Attack Score
+        Privacy_scores: &PRIV_SCORES
+            label: Privacy Scores
     columns:
-        score:
-            leaderboard: *RESULTS
-            label: Score
+        utility_score:
+            leaderboard: *ANON_RESULTS
+            label: Utility Score
             numeric_format: 4
             rank: 1
+        rate:
+            leaderboard: *ANON_RESULTS
+            label: rate
+            numeric_format: 4
+            rank: 2
+        cor:
+            leaderboard: *ANON_RESULTS
+            label: cor
+            numeric_format: 4
+            rank: 3
+        OR:
+            leaderboard: *ANON_RESULTS
+            label: OR
+            numeric_format: 4
+            rank: 4
+        pvalue:
+            leaderboard: *ANON_RESULTS
+            label: pvalue
+            numeric_format: 4
+            rank: 5
+
+        attack_score:
+            leaderboard: *ATK_RESULTS
+            column_group: *ATK_SCORE
+            label: Attack Score
+            numeric_format: 4
+            rank: 1
+        privacy_score_1:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 1
+            numeric_format: 4
+            rank: 1
+        privacy_score_2:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 2
+            numeric_format: 4
+            rank: 2
+        privacy_score_3:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 3
+            numeric_format: 4
+            rank: 3
+        privacy_score_4:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 4
+            numeric_format: 4
+            rank: 4
+        privacy_score_5:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 5
+            numeric_format: 4
+            rank: 5

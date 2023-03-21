@@ -25,7 +25,7 @@ if os.path.isdir(submission_dir) and os.path.isdir(orig_dir):
     data_id_file = os.path.join(submission_dir, "data_id.txt")
     data_id = open(data_id_file).read()
 
-    orig_file = os.path.join(orig_dir, "answers", str(data_id)+".csv")
+    orig_file = os.path.join(orig_dir, str(data_id)+".csv")
     submission_file = os.path.join(submission_dir, "anonymized.csv")
 
 
@@ -35,7 +35,8 @@ if os.path.isdir(submission_dir) and os.path.isdir(orig_dir):
     df = umark.umark(orig_df, submission_df)
     cnt, rate, coef, OR, pvalue, cor = df.loc["max"]
 
-    output_file.write("score:%.6f\n" % (1 - (rate + cor + OR + pvalue) / 4 ))
+    #output_file.write("score:%.6f\n" % (1 - (rate + cor + OR + pvalue) / 4 ))
+    output_file.write("utility_score:%.6f\n" % (1 - (rate + cor + OR + pvalue) / 4 ))
     output_file.write("rate:%.6f\n" % (1 - rate))
     output_file.write("cor:%.6f\n" % (1 - cor))
     output_file.write("OR:%.6f\n" % (1 - OR))
