@@ -27,8 +27,8 @@ phases:
         start_date: 2023-03-01
         max_submissions: 100
         is_scoring_only: True
-        scoring_program: scoring_program_anonymization.zip #temporarily
-        reference_data: reference_data_anonymization.zip #temporarily
+        scoring_program: scoring_program_attack.zip
+        reference_data: reference_data_attack.zip
         phase_never_ends: True
 
 leaderboard:
@@ -82,28 +82,88 @@ leaderboard:
             column_group: *PRIV_SCORES
             label: Team 1
             numeric_format: 4
-            rank: 1
+            rank: 2
         privacy_score_2:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 2
             numeric_format: 4
-            rank: 2
+            rank: 3
         privacy_score_3:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 3
             numeric_format: 4
-            rank: 3
+            rank: 4
         privacy_score_4:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 4
             numeric_format: 4
-            rank: 4
+            rank: 5
         privacy_score_5:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 5
             numeric_format: 4
-            rank: 5
+            rank: 6
+        privacy_score_6:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 6
+            numeric_format: 4
+            rank: 7
+        privacy_score_7:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 7
+            numeric_format: 4
+            rank: 8
+        privacy_score_8:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 8
+            numeric_format: 4
+            rank: 9
+        privacy_score_9:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 9
+            numeric_format: 4
+            rank: 10
+        privacy_score_10:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 10
+            numeric_format: 4
+            rank: 11
+        privacy_score_11:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 11
+            numeric_format: 4
+            rank: 12
+        privacy_score_12:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 12
+            numeric_format: 4
+            rank: 13            
+        privacy_score_13:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 13
+            numeric_format: 4
+            rank: 14
+        privacy_score_14:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 14
+            numeric_format: 4
+            rank: 15
+        privacy_score_15:
+            leaderboard: *ATK_RESULTS
+            column_group: *PRIV_SCORES
+            label: Team 15
+            numeric_format: 4
+            rank: 16

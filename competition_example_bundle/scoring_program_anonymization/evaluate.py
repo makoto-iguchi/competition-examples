@@ -26,8 +26,9 @@ if os.path.isdir(submission_dir) and os.path.isdir(orig_dir):
     data_id = open(data_id_file).read()
 
     orig_file = os.path.join(orig_dir, str(data_id)+".csv")
-    submission_file = os.path.join(submission_dir, "anonymized.csv")
 
+    # TODO?: Use glob to accept any file name (with its file extension ".csv")
+    submission_file = os.path.join(submission_dir, "anonymized.csv")
 
     orig_df = pd.read_csv(orig_file, header=None)
     submission_df = pd.read_csv(submission_file, header=None)
