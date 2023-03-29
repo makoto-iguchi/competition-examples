@@ -43,7 +43,7 @@ leaderboard:
         Attack_scores: &ATK_SCORE
             label: Attack Score
         Privacy_scores: &PRIV_SCORES
-            label: Privacy Scores
+            label: Privacy Scores after the attack
     columns:
         utility_score:
             leaderboard: *ANON_RESULTS
@@ -83,87 +83,102 @@ leaderboard:
             label: Team 1
             numeric_format: 4
             rank: 2
+            sort: asc
         privacy_score_2:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 2
             numeric_format: 4
             rank: 3
+            sort: asc
         privacy_score_3:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 3
             numeric_format: 4
             rank: 4
+            sort: asc
         privacy_score_4:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 4
             numeric_format: 4
             rank: 5
+            sort: asc
         privacy_score_5:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 5
             numeric_format: 4
             rank: 6
+            sort: asc
         privacy_score_6:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 6
             numeric_format: 4
             rank: 7
+            sort: asc
         privacy_score_7:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 7
             numeric_format: 4
             rank: 8
+            sort: asc
         privacy_score_8:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 8
             numeric_format: 4
             rank: 9
+            sort: asc
         privacy_score_9:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 9
             numeric_format: 4
             rank: 10
+            sort: asc
         privacy_score_10:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 10
             numeric_format: 4
             rank: 11
+            sort: asc
         privacy_score_11:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 11
             numeric_format: 4
             rank: 12
+            sort: asc
         privacy_score_12:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 12
             numeric_format: 4
             rank: 13            
+            sort: asc
         privacy_score_13:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 13
             numeric_format: 4
             rank: 14
+            sort: asc
         privacy_score_14:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 14
             numeric_format: 4
             rank: 15
+            sort: asc
         privacy_score_15:
             leaderboard: *ATK_RESULTS
             column_group: *PRIV_SCORES
             label: Team 15
             numeric_format: 4
             rank: 16
+            sort: asc
