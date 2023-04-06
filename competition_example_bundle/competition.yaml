@@ -15,8 +15,11 @@ phases:
     1:
         phasenumber: 1
         label: "Preliminary - Anonymization"
+        description: Anonymize Phase: Anonymize your team data
+        color: green
         start_date: 2023-03-01
-        max_submissions: 100
+        max_submissions: 10
+        max_submissions_per_day: 2
         is_scoring_only: True
         scoring_program: scoring_program_anonymization.zip
         reference_data: reference_data_anonymization.zip
@@ -24,13 +27,16 @@ phases:
     2:
         phasenumber: 2
         label: "Preliminary - Attack"
+        description: Attack Phase: Attack other teams' anonymized data
+        color: orange
         start_date: 2023-03-01
-        max_submissions: 100
+        max_submissions: 10
+        max_submissions_per_day: 2
         is_scoring_only: True
         scoring_program: scoring_program_attack.zip
         reference_data: reference_data_attack.zip
         phase_never_ends: True
-
+        
 leaderboard:
     leaderboards:
         Anonymous_phase_result: &ANON_RESULTS

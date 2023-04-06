@@ -1,7 +1,7 @@
-attack_score:0.350000
-privacy_score_1:0.666667
+attack_score:0.333333
+privacy_score_1:1.000000
 hit_1:0
-blow_1:4
+blow_1:0
 privacy_score_2:0.750000
 hit_2:0
 blow_2:3
@@ -11,9 +11,9 @@ blow_3:4
 privacy_score_4:0.583333
 hit_4:1
 blow_4:3
-privacy_score_5:0.750000
+privacy_score_5:1.000000
 hit_5:0
-blow_5:3
+blow_5:0
 privacy_score_6:0.750000
 hit_6:0
 blow_6:3
