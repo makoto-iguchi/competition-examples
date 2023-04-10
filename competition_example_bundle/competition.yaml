@@ -15,7 +15,7 @@ phases:
     1:
         phasenumber: 1
         label: "Preliminary - Anonymization"
-        description: Anonymize Phase: Anonymize your team data
+        description: "Anonymize Phase: Anonymize your team data"
         color: green
         start_date: 2023-03-01
         max_submissions: 10
@@ -27,7 +27,7 @@ phases:
     2:
         phasenumber: 2
         label: "Preliminary - Attack"
-        description: Attack Phase: Attack other teams' anonymized data
+        description: "Attack Phase: Attack other teams' anonymized data"
         color: orange
         start_date: 2023-03-01
         max_submissions: 10
